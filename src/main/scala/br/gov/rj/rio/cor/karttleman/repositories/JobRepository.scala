@@ -4,11 +4,11 @@ import org.joda.time.DateTime
 import com.mongodb.casbah.Imports._
 import com.mongodb.util.JSON
 
-object MessageRepository {
+object JobRepository {
 
   val mongoClient = MongoClient()
-  val messages = mongoClient("Karttleman")("messages")
+  val jobs = mongoClient("Karttleman")("jobs")
 
-  def allMessages = messages.find().toList
+  def allJobs = jobs.find().toList
 
 }
