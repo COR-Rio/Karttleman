@@ -23,10 +23,11 @@ class ScheduleController extends ScalatraServlet with ScalatraBase with JacksonJ
     get("/") {
         contentType = "text/html"
         """
-        <p>
-            Pessoas
-        </p>
-        <a href="/pessoas">Pessoa</a>
+        <ul>
+        <li><a href="/pessoas">Pessoas</a></li>
+        <li><a href="/messages">Messages</a></li>
+        <li><a href="/jobs">Jobs</a></li>
+        </ul>
         """
     }
 
